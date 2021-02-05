@@ -1,7 +1,7 @@
 .wbdv-sticky-top {
     position: relative;
     width: 100%;
-    background-color: lightskyblue;
+    background-color: #e3f2fd;
     z-index: 1;
     top: auto;
 }
