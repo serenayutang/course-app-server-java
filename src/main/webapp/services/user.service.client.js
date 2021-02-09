@@ -23,9 +23,7 @@ function UsersServiceClient() {
             return response.json()
         })
     }
-    // function findUserById(userId) {
-    //
-    // }
+
     function updateUser(userId, user) {
         return fetch(`${self.url}/${userId}`, {
             method: 'PUT',
@@ -38,4 +36,8 @@ function UsersServiceClient() {
     function removeUser(userId) {
         return fetch(`${self.url}/${userId}`, {method: 'DELETE'})
     }
+
+    // function findUserById(userId) {
+    //
+    // }
 }
