@@ -36,7 +36,7 @@ function renderUsers(users) {
         $tableBody.prepend(
             `<tr class="wbdv-template wbdv-user">
                         <td class="wbdv-username">${user.username}</td>
-                        <td>${user.password}</td>
+                        <td>&nbsp;</td>
                         <td class="wbdv-first-name">${user.firstname}</td>
                         <td class="wbdv-last-name">${user.lastname}</td>
                         <td class="wbdv-role">${user.role}</td>
