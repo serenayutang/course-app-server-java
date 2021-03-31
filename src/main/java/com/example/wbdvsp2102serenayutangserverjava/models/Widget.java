@@ -1,6 +1,13 @@
 package com.example.wbdvsp2102serenayutangserverjava.models;
 
+import javax.persistence.*;
+
+@Entity
+@Table(name = "widgets")
 public class Widget {
+
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
   private Long id;
   private String type;
   private Integer size;
@@ -14,7 +21,15 @@ public class Widget {
   private String cssClass;
   private String style;
   private String value;
+  private Boolean ordered;
 
+  public Boolean getOrdered() {
+    return ordered;
+  }
+
+  public void setOrdered(Boolean ordered) {
+    this.ordered = ordered;
+  }
 
   public Widget(Long id, String type, Integer size, String text, String topicId, String name, Integer widgetOrder,
                 String url, Integer width, Integer height, String cssClass, String style, String value) {
@@ -150,3 +165,41 @@ public class Widget {
   }
 
 }
+
+/*
+create table widget (
+       id bigint not null,
+        css_class varchar(255),
+        height integer,
+        name varchar(255),
+        size integer,
+        style varchar(255),
+        text varchar(255),
+        topic_id varchar(255),
+        type varchar(255),
+        url varchar(255),
+        value varchar(255),
+        widget_order integer,
+        width integer,
+        primary key (id)
+    ) engine=InnoDB
+ */
+
+/*
+create table widgets (
+       id bigint not null,
+        css_class varchar(255),
+        height integer,
+        name varchar(255),
+        size integer,
+        style varchar(255),
+        text varchar(255),
+        topic_id varchar(255),
+        type varchar(255),
+        url varchar(255),
+        value varchar(255),
+        widget_order integer,
+        width integer,
+        primary key (id)
+    ) engine=InnoDB
+ */
