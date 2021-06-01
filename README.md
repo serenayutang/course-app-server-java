@@ -5,6 +5,7 @@ CourseApp is an online course management system that I developed when taking CS5
 This is the 1st repo out of 3 for the entire app. GitHub links for the other two repos:
 
 https://github.com/serenayutang/course-app-server-node
+
 https://github.com/serenayutang/course-app-client-react
 
 Heroku link for this repo: https://webdev-serenaytang.herokuapp.com/
